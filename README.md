@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+- [Quick Install](#quick-install)
 - [Purpose](#purpose)
 - [How to Invoke](#how-to-invoke)
 - [Core Features](#core-features)
@@ -17,6 +18,35 @@
 - [Documentation](#documentation)
 - [Important Notes](#important-notes)
 - [Related Resources](#related-resources)
+
+## Quick Install
+
+```bash
+# Go to your Claude Code project root
+cd your-project
+mkdir -p .claude/skills/apa-visualization
+
+# Clone this repository and install the skill files
+git clone https://github.com/SiyuChen1111/APA-visualization-skills.git /tmp/apa-visualization
+cp /tmp/apa-visualization/SKILL.md .claude/skills/apa-visualization/
+cp /tmp/apa-visualization/README.md .claude/skills/apa-visualization/
+cp /tmp/apa-visualization/EXAMPLES.md .claude/skills/apa-visualization/
+rm -rf /tmp/apa-visualization
+```
+
+Restart Claude Code after installation. The `apa-visualization` skill will be available for APA visualization tasks and can also be invoked by explicitly mentioning `apa-visualization` in your request.
+
+### Installed File Structure
+
+```
+your-project/
+└── .claude/
+    └── skills/
+        └── apa-visualization/
+            ├── SKILL.md
+            ├── README.md
+            └── EXAMPLES.md
+```
 
 ## Purpose
 
@@ -319,6 +349,18 @@ APA-visulazation--skills/
 ├── README.md          # This file - quick start guide
 ├── EXAMPLES.md        # Comprehensive usage examples with code
 └── (output files)     # Generated figures (PDF, PNG, etc.)
+```
+
+### Installed Skill Structure
+
+```
+your-project/
+└── .claude/
+    └── skills/
+        └── apa-visualization/
+            ├── SKILL.md          # Complete skill definition and guidelines
+            ├── README.md         # Quick start guide
+            └── EXAMPLES.md       # Comprehensive usage examples with code
 ```
 
 ### Documentation Files
